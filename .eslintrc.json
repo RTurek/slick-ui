@@ -1,0 +1,70 @@
+{
+  "env": {
+    "es6": true,
+    "jest/globals": true,
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./webpack.config.js"
+      }
+    }
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalDecorators": true
+    }
+  },
+  "extends": [
+    "airbnb",
+    "plugin:jest/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "import",
+    "jest"
+  ],
+  "rules": {
+    "arrow-parens": "off",
+    "comma-dangle": ["error", "never"],
+    "implicit-arrow-linebreak": "off",
+    "import/named": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}
+    ],
+    "jest/no-mocks-import": "off",
+    "jest/no-standalone-expect": "off",
+    "no-async-promise-executor": "off",
+    "no-self-assign": "off",
+    "no-unused-vars": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "prefer-object-spread": "off",
+    "react/button-has-type": "off",
+    "react/destructuring-assignment": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-curly-newline": "off",
+    "react/jsx-fragments": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-tag-spacing": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/no-access-state-in-setstate": "off",
+    "react/no-did-update-set-state": "off",
+    "react/prop-types": ["error", { "ignore": ["tracking"] }],
+    "react/sort-comp": "off",
+    "react/state-in-constructor": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": ["warn", {
+      "additionalHooks": "(useMyCustomHook|useMyOtherCustomHook)"
+    }]
+  },
+  "globals": {},
+  "root": true
+}

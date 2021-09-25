@@ -1,0 +1,16 @@
+{
+    "workbench.colorCustomizations": {},
+    "eslint.options": {
+      "parserOptions": {
+      "experimentalDecorators": true
+      }
+    },
+    "eslint.alwaysShowStatus": true,
+    "eslint.packageManager": "npm",
+    "eslint.workingDirectories": [
+    {
+      "directory": "", "changeProcessCWD": true }
+    ],
+    "eslint.nodePath": "",
+    "eslint.format.enable": true,
+}
