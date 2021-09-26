@@ -9,7 +9,7 @@ const colorOptions = {
 };
 
 export default {
-  title: '1 ~ Slick / Uncategorized / Chip',
+  title: 'Inputs / Chip',
 
   decorators: [
     withInfo({
@@ -23,6 +23,8 @@ export default {
   ]
 };
 
+// ------------------------------------ Contained
+
 export const containedDefault = () => (
   <Chip
     color={select('Color', colorOptions, 'primary')}
@@ -35,6 +37,8 @@ export const containedDefault = () => (
 containedDefault.story = {
   name: 'Contained/Default'
 };
+
+// ------------------------------------ Outlined
 
 export const outlined = () => (
   <Chip

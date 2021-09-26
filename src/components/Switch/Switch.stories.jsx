@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { withActions } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import Switch from './Switch';
 
@@ -31,7 +30,7 @@ SwitchStory.defaultProps = {
 };
 
 export default {
-  title: '1 ~ Slick / Forms / Switch',
+  title: 'Forms / Switch',
 
   decorators: [
     withInfo({
@@ -39,44 +38,51 @@ export default {
       header: true,
       inline: true,
       source: false
-    }),
-    withActions('mouseover', 'click')
+    })
   ]
 };
 
 // NOTE: There were some issues with knobs for Switch, so I just separated these out
 
-export const enabledAndCheckedSwitch = () => <SwitchStory
-  disabled={false}
-  isCheckedByDefault
-/>;
+export const enabledAndCheckedSwitch = () => (
+  <SwitchStory
+    disabled={false}
+    isCheckedByDefault
+  />
+);
 
 enabledAndCheckedSwitch.story = {
   name: 'Enabled And Checked'
 };
 
-export const enabledAndUncheckedSwitch = () => <SwitchStory
-  disabled={false}
-  isCheckedByDefault={false}
-/>;
+export const enabledAndUncheckedSwitch = () => (
+  <SwitchStory
+    disabled={false}
+    isCheckedByDefault={false}
+  />
+);
 
 enabledAndUncheckedSwitch.story = {
   name: 'Enabled And Unchecked'
 };
 
-export const disabledAndCheckedSwitch = () => <SwitchStory
-  disabled
-  isCheckedByDefault
-/>;
+export const disabledAndCheckedSwitch = () => (
+  <SwitchStory
+    disabled
+    isCheckedByDefault
+  />
+);
 
 disabledAndCheckedSwitch.story = {
   name: 'Disabled And Checked'
 };
 
-export const disabledAndUncheckedSwitch = () => <SwitchStory
-  disabled
-  isCheckedByDefault={false}
-/>;
+export const disabledAndUncheckedSwitch = () => (
+  <SwitchStory
+    disabled
+    isCheckedByDefault={false}
+  />
+);
 
 disabledAndUncheckedSwitch.story = {
   name: 'Disabled And Unchecked'
