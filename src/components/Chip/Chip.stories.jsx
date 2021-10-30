@@ -5,7 +5,9 @@ import Chip from './Chip';
 
 const colorOptions = {
   primary: 'primary',
-  secondary: 'secondary'
+  secondary: 'secondary',
+  warning: 'warning',
+  success: 'success'
 };
 
 export default {
