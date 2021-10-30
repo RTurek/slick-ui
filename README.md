@@ -1,7 +1,9 @@
 # slick-ui (alpha)
-"Slick!" is a component library developed by Ryan Turek, based on Material-UI. At the moment this is just a side project for fun, practice and teaching.
+`slick-ui` is a component library developed by Ryan Turek, based on the Material-UI component library and the Material Design System. At the moment this is just a side project for fun, practice, and teaching.
 
-This library is a collection of work I've done over the last few years that demonstrates my ui development capabilities. Frontend architecture, ui component development, accessibility, clean maintainable code, user experience, documentation, and ui testing are my passions as a developer. I like to live where all of those things come together!
+This library is a collection of work I've done over the last few years that demonstrates my ui development capabilities.
+
+Frontend architecture, ui component development, accessibility, clean and maintainable code, user experience, documentation, and ui testing are my passions as a developer. I like to live where all of those things come together!
 
 _Things I'm playing around with for this project just to practice and learn..._
 - React.js
@@ -9,9 +11,9 @@ _Things I'm playing around with for this project just to practice and learn..._
 - Storybook
 - Semantic HTML
 - styled-components (css-in-js)
-- tailwindcss (utility based css)
-- TypeScript
-- Custom HTML Elements (web components)
+- (not yet) tailwindcss (utility based css)
+- (not yet) TypeScript
+- (not yet) Custom HTML Elements (web components)
 
 # Instructions for LOCAL development
 

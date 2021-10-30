@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withInfo } from '@storybook/addon-info';
+import styled from 'styled-components';
 import Switch from './Switch';
 
 // https://material-ui.com/components/switches
+
+const StoryWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
 
 const SwitchStory = (props) => {
   const [isChecked, setIsChecked] = useState(props.isCheckedByDefault);
@@ -13,11 +20,15 @@ const SwitchStory = (props) => {
   };
 
   return (
-    <Switch
-      onChange={handleChange}
-      checked={isChecked}
-      disabled={props.disabled}
-    />
+    <StoryWrapper>
+      <label for="switch-story" style={{alignSelf: 'center'}}>Switch Input Label:</label>
+      <Switch
+        id="switch-story"
+        onChange={handleChange}
+        checked={isChecked}
+        disabled={props.disabled}
+      />
+    </StoryWrapper>
   );
 };
 
@@ -34,10 +45,10 @@ export default {
 
   decorators: [
     withInfo({
-      text: 'Use knobs to try out the different variants and to disable/enable.',
       header: true,
       inline: true,
-      source: false
+      source: false,
+      propTables: [Switch]
     })
   ]
 };

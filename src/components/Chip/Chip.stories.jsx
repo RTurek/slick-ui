@@ -12,7 +12,6 @@ const colorOptions = {
 
 export default {
   title: 'Inputs / Chip',
-
   decorators: [
     withInfo({
       text: '',

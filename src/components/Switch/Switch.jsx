@@ -48,6 +48,8 @@ function Switch(props) {
 }
 
 Switch.propTypes = {
+  /** id (use for accessibility or nav) */
+  id: PropTypes.string.isRequired,
   classes: PropTypes.shape({}),
   /** On Change Event handler (typically makes an API call and changes the checked value) */
   onChange: PropTypes.func.isRequired,
