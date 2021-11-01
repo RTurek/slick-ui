@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withInfo } from '@storybook/addon-info';
-import styled from 'styled-components';
+import StoryWrapper from '../utilities/StoryWrapper';
 import Switch from './Switch';
 
 // https://material-ui.com/components/switches
-
-const StoryWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
 
 const SwitchStory = (props) => {
   const [isChecked, setIsChecked] = useState(props.isCheckedByDefault);

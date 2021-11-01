@@ -1,6 +1,7 @@
 import React from 'react';
 import { withInfo } from '@storybook/addon-info';
 import { text, select, boolean } from '@storybook/addon-knobs';
+import StoryWrapper from '../utilities/StoryWrapper';
 import Chip from './Chip';
 
 const colorOptions = {
@@ -27,12 +28,14 @@ export default {
 // ------------------------------------ Contained
 
 export const containedDefault = () => (
-  <Chip
-    color={select('Color', colorOptions, 'primary')}
-    label={text('Label', 'test@turekworks.com')}
-    onDelete={boolean('Has Delete', true)}
-    clickable={boolean('Clickable', true)}
-  />
+  <StoryWrapper>
+    <Chip
+      color={select('Color', colorOptions, 'primary')}
+      label={text('Label', 'test@turekworks.com')}
+      onDelete={boolean('Has Delete', true)}
+      clickable={boolean('Clickable', true)}
+    />
+  </StoryWrapper>
 );
 
 containedDefault.story = {
@@ -42,13 +45,15 @@ containedDefault.story = {
 // ------------------------------------ Outlined
 
 export const outlined = () => (
-  <Chip
-    variant="outlined"
-    color={select('Color', colorOptions, 'primary')}
-    label={text('Label', 'test@turekworks.com')}
-    onDelete={boolean('Has Delete', true)}
-    clickable={boolean('Clickable', true)}
-  />
+  <StoryWrapper>
+    <Chip
+      variant="outlined"
+      color={select('Color', colorOptions, 'primary')}
+      label={text('Label', 'test@turekworks.com')}
+      onDelete={boolean('Has Delete', true)}
+      clickable={boolean('Clickable', true)}
+    />
+  </StoryWrapper>
 );
 
 outlined.story = {
