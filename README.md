@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73200f96-fc74-4825-98cd-a97f105e3155/deploy-status)](https://app.netlify.com/sites/slick-ui/deploys)
+
 # slick-ui (alpha)
 `slick-ui` is a component library developed by Ryan Turek, based on the Material-UI component library and the Material Design System. At the moment this is just a side project for fun, practice, and teaching.
 
@@ -11,9 +13,13 @@ _Things I'm playing around with for this project just to practice and learn..._
 - Storybook
 - Semantic HTML
 - styled-components (css-in-js)
+- Netlify
 - (not yet) tailwindcss (utility based css)
 - (not yet) TypeScript
 - (not yet) Custom HTML Elements (web components)
+
+# Demo
+https://slick-ui.netlify.app/
 
 # Instructions for LOCAL development
 
@@ -66,10 +72,15 @@ _Requires `@storybook/cli`_
     npx sb upgrade
   ```
 
+# Netlify Deployment
 
-Netlify Deployment
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73200f96-fc74-4825-98cd-a97f105e3155/deploy-status)](https://app.netlify.com/sites/slick-ui/deploys)
 
-(Coming Soon)
+https://slick-ui.netlify.app/
+
+Deploys on Netlify pull from `main` branch in this repo and run the Storybook static build.
+
+Automatic deploys are turned OFF.
 
 <!--
 NOTE: This is from an old repo that I wrote, and may not work for slick-ui but I'm leaving it here for now.
