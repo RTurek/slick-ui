@@ -78,9 +78,14 @@ _Requires `@storybook/cli`_
 
 https://slick-ui.netlify.app/
 
-Deploys on Netlify pull from `main` branch in this repo and run the Storybook static build.
+Netlify pulls from the `deploy-netlify-storybook` branch in this repo to deploy to the URL above. To start a new deploy, you should get `deploy-netlify-storybook` up to date with `main` OR push whatever changes you'd like to test to the deploy branch, and Netlify will automatically run the storybook static build and publish the updates when the branch is updated on GitHub.
 
-Automatic deploys are turned OFF.
+  ```shell
+    git checkout deploy-netlify-storybook
+    git rebase main
+    git push
+  ```
+
 
 <!--
 NOTE: This is from an old repo that I wrote, and may not work for slick-ui but I'm leaving it here for now.
