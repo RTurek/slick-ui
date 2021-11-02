@@ -2,6 +2,7 @@ import React from 'react';
 import MaterialAvatar from '@material-ui/core/Avatar';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
+import { COLORS } from '@styles/colors';
 import Anonymous from '../../assets/svg/Anonymous';
 import { hasFullName, getFirstLetter } from '../../utils/string';
 import {
@@ -10,7 +11,6 @@ import {
   AVATAR_VIEWBOX_SIZES,
   AVATAR_FONT_SIZES
 } from '../../styles/sizes';
-import { COLORS } from '../../styles/colors';
 
 function buildStyle(props) {
   const backgroundColor = COLORS.primary;

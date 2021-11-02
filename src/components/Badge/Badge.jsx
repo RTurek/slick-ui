@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MaterialBadge from '@material-ui/core/Badge';
 import { withTheme, withStyles } from '@material-ui/core/styles';
+import { COLORS } from '@styles/colors';
 import hexToRgba from '../../utils/hexToRgba';
-import { COLORS } from '../../styles/colors';
 import { decagramWithBorderEncoded, santaHatEncoded } from '../../assets/encodedSVGs';
 
 function buildStyle(props) {
@@ -177,7 +177,8 @@ Badge.defaultProps = {
         secondary: COLORS.gray
       },
       common: {
-        white: COLORS.binary
+        white: COLORS.binary,
+        black: COLORS.black
       }
     }
   }

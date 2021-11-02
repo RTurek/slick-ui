@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import ThemeWrapper from './ThemeWrapper';
 
 const StyledStoryWrapper = styled.div`
   display: flex;
@@ -10,9 +11,11 @@ const StyledStoryWrapper = styled.div`
 `;
 
 const StoryWrapper = (props) => (
-  <StyledStoryWrapper>
-    {props.children}
-  </StyledStoryWrapper>
+  <ThemeWrapper>
+    <StyledStoryWrapper>
+      {props.children}
+    </StyledStoryWrapper>
+  </ThemeWrapper>
 );
 
 StoryWrapper.propTypes = {
