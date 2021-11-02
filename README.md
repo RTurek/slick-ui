@@ -56,6 +56,8 @@ Update Snapshots
     npm run test -u
   ```
 
+Coverage report should be generated at `coverage/lcov-report/index.html`
+
 ### Lint
 
   ```shell
