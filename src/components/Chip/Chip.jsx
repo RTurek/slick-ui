@@ -21,7 +21,7 @@ function Chip(props) {
 Chip.propTypes = {
   /** Avatar Element */
   avatar: PropTypes.node,
-  /** Material Class overrides */
+  /** Class overrides */
   classes: PropTypes.shape({}),
   /** Appears to be interactive on Click */
   clickable: PropTypes.bool,

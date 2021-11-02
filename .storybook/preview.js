@@ -1,6 +1,14 @@
-import { configure, addParameters } from '@storybook/react';
-import mmStorybookTheming from './mmStorybookTheming';
+import { configure, addDecorator, addParameters } from '@storybook/react';
+import mmStorybookTheming, { globalStyle } from './storybookTheming';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+
+// Global Wrapper for theme and global styles
+const wrapper = storyFn => (
+  <div style={globalStyle}>{storyFn()}</div>
+);
+
+// Decorators: Order matters here
+addDecorator(wrapper);
 
 // Parameters
 addParameters({
@@ -19,7 +27,7 @@ addParameters({
     showPanel: true,
     /** where to show the addon panel
      * @type {('bottom'|'right')} */
-    panelPosition: 'bottom',
+    panelPosition: 'right',
     /** regex for finding the hierarchy separator
      * @example:
      *   null - turn off hierarchy

@@ -2,6 +2,7 @@ import React from 'react';
 import { withInfo } from '@storybook/addon-info';
 import { text, select, boolean } from '@storybook/addon-knobs';
 import StoryWrapper from '../utilities/StoryWrapper';
+import { storybookStyles } from '../../../.storybook/storybookTheming';
 import Chip from './Chip';
 
 const colorOptions = {
@@ -19,6 +20,7 @@ export default {
       header: true,
       inline: true,
       source: false,
+      styles: storybookStyles,
       propTables: [Chip],
       excludedPropTypes: ['theme']
     })

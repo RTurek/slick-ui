@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withInfo } from '@storybook/addon-info';
 import StoryWrapper from '../utilities/StoryWrapper';
+import { storybookStyles } from '../../../.storybook/storybookTheming';
 import Switch from './Switch';
 
 // https://material-ui.com/components/switches
@@ -15,7 +16,8 @@ const SwitchStory = (props) => {
 
   return (
     <StoryWrapper>
-      <label for="switch-story" style={{alignSelf: 'center'}}>Switch Input Label:</label>
+      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+      <label htmlFor="switch-story" style={{ alignSelf: 'center' }}>Switch Input Label:</label>
       <Switch
         id="switch-story"
         onChange={handleChange}
@@ -35,13 +37,14 @@ SwitchStory.defaultProps = {
 };
 
 export default {
-  title: 'Forms / Switch',
+  title: 'Inputs / Switch',
 
   decorators: [
     withInfo({
       header: true,
       inline: true,
       source: false,
+      styles: storybookStyles,
       propTables: [Switch]
     })
   ]
