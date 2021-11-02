@@ -9,8 +9,8 @@ import {
   AVATAR_SIZES,
   AVATAR_VIEWBOX_SIZES,
   AVATAR_FONT_SIZES
-} from '../../style/sizes';
-import { COLORS } from '../../style/colors';
+} from '../../styles/sizes';
+import { COLORS } from '../../styles/colors';
 
 function buildStyle(props) {
   const backgroundColor = COLORS.primary;
