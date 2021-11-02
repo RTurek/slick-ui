@@ -3,7 +3,7 @@
 # slick-ui (alpha)
 `slick-ui` is a component library developed by Ryan Turek, based on the Material-UI component library and the Material Design System. At the moment this is just a side project for fun, practice, and teaching.
 
-This library is a collection of work I've done over the last few years that demonstrates my ui development capabilities.
+This library is a collection of work I've done over the last few years that demonstrates my ui development capabilities. It's meant for use on other side projects, not necessarily for general public use.
 
 Frontend architecture, ui component development, accessibility, clean and maintainable code, user experience, documentation, and ui testing are my passions as a developer. I like to live where all of those things come together!
 
@@ -14,9 +14,12 @@ _Things I'm playing around with for this project just to practice and learn..._
 - Semantic HTML
 - styled-components (css-in-js)
 - Netlify
+- Jest
+- eslint / stylelint
 - (not yet) tailwindcss (utility based css)
 - (not yet) TypeScript
 - (not yet) Custom HTML Elements (web components)
+- Accessibility testing
 
 # Demo
 https://slick-ui.netlify.app/
@@ -42,15 +45,25 @@ _The project might work with previous versions, but I can only guarantee it work
   ```
 
 ### Tests
-(Coming Soon)
+
+Run tests
   ```shell
     npm run test
   ```
 
+Update Snapshots
+  ```shell
+    npm run test -u
+  ```
+
 ### Lint
-(Coming Soon)
+
   ```shell
     npm run lint
+  ```
+
+  ```shell
+    npm run lint:css
   ```
 
 ## Storybook

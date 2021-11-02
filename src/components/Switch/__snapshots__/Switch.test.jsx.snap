@@ -27,6 +27,7 @@ exports[`Switch should render 1`] = `
       <input
         checked={true}
         className="PrivateSwitchBase-input-7 MuiSwitch-input"
+        id="test"
         onChange={[Function]}
         type="checkbox"
       />

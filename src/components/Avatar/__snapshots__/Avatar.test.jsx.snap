@@ -2,7 +2,7 @@
 
 exports[`Avatar should render 1`] = `
 <div
-  className="MuiAvatar-root Component-root-1 MuiAvatar-circle react-css"
+  className="MuiAvatar-root Component-root-1 MuiAvatar-circular react-css"
   onError={[Function]}
 >
   <img
@@ -35,7 +35,7 @@ exports[`Avatar should render Anonymous when there is no image or full name 1`] 
 
 exports[`Avatar should render Initials when there is no image 1`] = `
 <div
-  className="MuiAvatar-root Component-root-2 MuiAvatar-circle react-css MuiAvatar-colorDefault"
+  className="MuiAvatar-root Component-root-2 MuiAvatar-circular react-css MuiAvatar-colorDefault"
 >
   JM
 </div>

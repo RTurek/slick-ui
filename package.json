@@ -30,7 +30,7 @@
     "build": "webpack --config webpack.config.js",
     "build:dev": "npm install && npm build && npm lint && npm test -u",
     "lint": "eslint --ext .jsx --ext .js ./src",
-    "lint:css": "stylelint './components/**/*.jsx'",
+    "lint:css": "stylelint './src/components/**/*.jsx'",
     "test": "TZ=UTC jest --runInBand",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -o static-storybook"
