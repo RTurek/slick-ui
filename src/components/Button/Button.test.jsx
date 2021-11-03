@@ -1,17 +1,16 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Switch from './Switch';
+import Button from './Button';
 import ThemeWrapper from '../../styles/ThemeWrapper';
 
-test('Switch should render', () => {
+test('Button should render', () => {
   const component = (
     <ThemeWrapper>
-      <Switch
-        id="test"
-        data-test-id="jest-test-switch-1"
-        onChange={() => {}}
-        checked
-      />
+      <Button
+        color="primary"
+      >
+        This Is A Test
+      </Button>
     </ThemeWrapper>
   );
   const tree = renderer.create(component).toJSON();

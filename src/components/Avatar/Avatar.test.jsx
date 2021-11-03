@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Avatar from './Avatar';
+import ThemeWrapper from '../../styles/ThemeWrapper';
 
 const fullProps = {
   imageUrl: 'http://i.pravatar.cc/300',
@@ -15,7 +16,9 @@ const anonProps = {};
 
 test('Avatar should render', () => {
   const component = (
-    <Avatar {...fullProps} />
+    <ThemeWrapper>
+      <Avatar {...fullProps} />
+    </ThemeWrapper>
   );
   const tree = renderer.create(component).toJSON();
   expect(tree).toMatchSnapshot();
