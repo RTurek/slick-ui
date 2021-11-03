@@ -182,5 +182,3 @@ Badge.defaultProps = {
 };
 
 export default Badge;
-/* For Storybook Use Only */
-export const BadgeForStorybook = Badge;

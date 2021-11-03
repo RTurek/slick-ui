@@ -12,6 +12,9 @@ import {
   AVATAR_FONT_SIZES
 } from '../../styles/sizes';
 
+// TODO: Add a border with a few color variants
+// TODO: refactor to be a functional component
+
 function buildStyle(props) {
   const backgroundColor = COLORS.primary;
   const textColor = COLORS.white;

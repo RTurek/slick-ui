@@ -3,7 +3,7 @@ import { withInfo } from '@storybook/addon-info';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
 import StoryWrapper from '../../styles/StoryWrapper';
-import Badge, { BadgeForStorybook } from './Badge';
+import Badge from './Badge';
 import badgeNotes from './badgeNotes.md';
 
 export default {
@@ -16,7 +16,7 @@ export default {
       inline: true,
       source: false,
       styles: storybookStyles,
-      propTables: [BadgeForStorybook],
+      propTables: [Badge],
       propTablesExclude: [Badge, AccountCircle],
       excludedPropTypes: ['theme']
     })
