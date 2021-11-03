@@ -4,6 +4,7 @@ import { text } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
 import CopyText from './CopyText';
+import StoryWrapper from '../../styles/StoryWrapper';
 
 const CopyTextStoryWrapper = styled.div`
   justify-content: center;
@@ -14,7 +15,7 @@ const CopyTextStoryWrapper = styled.div`
 `;
 
 export default {
-  title: '1 ~ Slick / Uncategorized / CopyText',
+  title: 'Novel Features / CopyText',
 
   decorators: [
     withInfo({
@@ -30,9 +31,11 @@ export default {
 };
 
 export const copyText = () => (
-  <CopyTextStoryWrapper>
-    <CopyText codeToCopy={text('Code To Copy', '123TEST')} />
-  </CopyTextStoryWrapper>
+  <StoryWrapper>
+    <CopyTextStoryWrapper>
+      <CopyText textToCopy={text('Text To Copy', '123TEST')} />
+    </CopyTextStoryWrapper>
+  </StoryWrapper>
 );
 
 copyText.story = {

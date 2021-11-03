@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useReducer } from 'react';
 import PropTypes from 'prop-types';
 import InputBase from '@material-ui/core/InputBase';
 import styled from 'styled-components';
-import MaterialButton from '@material-ui/core/Button';
+import Button from '../Button/Button';
 
 const CopyTextWrapper = styled.div`
   background-color: white;
@@ -15,7 +15,7 @@ const CopyTextWrapper = styled.div`
   margin: auto;
 `;
 
-const CodeInput = styled(InputBase)`
+const TextInput = styled(InputBase)`
   float: left;
   box-sizing: content-box;
   margin: 8px 0px 0px 10px;
@@ -51,7 +51,7 @@ function reducer(state, action) {
 }
 
 function CopyText(props) {
-  const { codeToCopy } = props;
+  const { textToCopy } = props;
   const [state, dispatch] = useReducer(reducer, initialState);
   const referralUrlRef = useRef(null);
   useEffect(() => {
@@ -71,25 +71,25 @@ function CopyText(props) {
 
   return (
     <CopyTextWrapper>
-      <CodeInput
+      <TextInput
         inputRef={referralUrlRef}
-        value={codeToCopy}
+        value={textToCopy}
         inputProps={{
-          title: 'Code To Copy',
-          name: 'Code To Copy',
+          title: 'Text To Copy',
+          name: 'Text To Copy',
           className: 'react-css'
         }}
       />
       {copyCommandSupported && (
-        <MaterialButton
+        <Button
           variant="contained"
           color="lightGrey"
           size="medium"
           onClick={copyToClipboard}
           style={buttonStyle}
         >
-          {state.copied ? 'Code Copied!' : 'Copy Code'}
-        </MaterialButton>
+          {state.copied ? 'Copied!' : 'Copy Text'}
+        </Button>
       )}
     </CopyTextWrapper>
   );
@@ -97,11 +97,11 @@ function CopyText(props) {
 
 CopyText.propTypes = {
   /** Text To Be Copied */
-  codeToCopy: PropTypes.string
+  textToCopy: PropTypes.string
 };
 
 CopyText.defaultProps = {
-  codeToCopy: ''
+  textToCopy: ''
 };
 
 export default CopyText;
