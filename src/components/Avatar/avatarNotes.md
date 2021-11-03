@@ -10,4 +10,4 @@ This variant on Material UI's Avatar gives you some control over color, size, an
 
 #### Sources
 ---
-- https://material-ui.com/demos/avatars/
+- https://mui.com/components/avatars/

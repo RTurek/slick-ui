@@ -4,6 +4,7 @@ import { withInfo } from '@storybook/addon-info';
 import StoryWrapper from '../utilities/StoryWrapper';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
 import Switch from './Switch';
+import switchNotes from './switchNotes.md';
 
 // https://material-ui.com/components/switches
 
@@ -41,6 +42,7 @@ export default {
 
   decorators: [
     withInfo({
+      text: switchNotes,
       header: true,
       inline: true,
       source: false,

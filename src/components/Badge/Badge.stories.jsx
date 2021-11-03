@@ -2,14 +2,16 @@ import React from 'react';
 import { withInfo } from '@storybook/addon-info';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
+import StoryWrapper from '../utilities/StoryWrapper';
 import Badge, { BadgeForStorybook } from './Badge';
+import badgeNotes from './badgeNotes.md';
 
 export default {
   title: 'Core / Badge',
 
   decorators: [
     withInfo({
-      text: 'This variant on the Badge gives us control over color and placement.',
+      text: badgeNotes,
       header: true,
       inline: true,
       source: false,
@@ -22,9 +24,11 @@ export default {
 };
 
 export const alertRight = () => (
-  <Badge invisible={false} badgeContent={1} customBadgeVariant="alert-right">
-    <AccountCircle fontSize="large" />
-  </Badge>
+  <StoryWrapper>
+    <Badge invisible={false} badgeContent={1} customBadgeVariant="alert-right">
+      <AccountCircle fontSize="large" />
+    </Badge>
+  </StoryWrapper>
 );
 
 alertRight.story = {
@@ -32,9 +36,11 @@ alertRight.story = {
 };
 
 export const alertText = () => (
-  <Badge invisible={false} badgeContent="NEW" customBadgeVariant="alert-right">
-    <AccountCircle fontSize="large" />
-  </Badge>
+  <StoryWrapper>
+    <Badge invisible={false} badgeContent="NEW" customBadgeVariant="alert-right">
+      <AccountCircle fontSize="large" />
+    </Badge>
+  </StoryWrapper>
 );
 
 alertText.story = {
@@ -42,9 +48,11 @@ alertText.story = {
 };
 
 export const alertDot = () => (
-  <Badge invisible={false} customBadgeVariant="dot">
-    <AccountCircle fontSize="large" />
-  </Badge>
+  <StoryWrapper>
+    <Badge invisible={false} customBadgeVariant="dot">
+      <AccountCircle fontSize="large" />
+    </Badge>
+  </StoryWrapper>
 );
 
 alertDot.story = {
@@ -52,9 +60,11 @@ alertDot.story = {
 };
 
 export const greyLeft = () => (
-  <Badge invisible={false} badgeContent={3} customBadgeVariant="grey-left">
-    <AccountCircle fontSize="large" />
-  </Badge>
+  <StoryWrapper>
+    <Badge invisible={false} badgeContent={3} customBadgeVariant="grey-left">
+      <AccountCircle fontSize="large" />
+    </Badge>
+  </StoryWrapper>
 );
 
 greyLeft.story = {
@@ -62,9 +72,11 @@ greyLeft.story = {
 };
 
 export const decagramLeft = () => (
-  <Badge invisible={false} badgeContent={3} customBadgeVariant="decagram-left">
-    <AccountCircle fontSize="large" />
-  </Badge>
+  <StoryWrapper>
+    <Badge invisible={false} badgeContent={3} customBadgeVariant="decagram-left">
+      <AccountCircle fontSize="large" />
+    </Badge>
+  </StoryWrapper>
 );
 
 decagramLeft.story = {
@@ -72,9 +84,11 @@ decagramLeft.story = {
 };
 
 export const seasonalBadgeLeft = () => (
-  <Badge invisible={false} badgeContent={3} customBadgeVariant="seasonal-badge-left">
-    <AccountCircle fontSize="large" />
-  </Badge>
+  <StoryWrapper>
+    <Badge invisible={false} badgeContent={3} customBadgeVariant="seasonal-badge-left">
+      <AccountCircle fontSize="large" />
+    </Badge>
+  </StoryWrapper>
 );
 
 seasonalBadgeLeft.story = {
@@ -82,9 +96,11 @@ seasonalBadgeLeft.story = {
 };
 
 export const bottomRight = () => (
-  <Badge invisible={false} badgeContent={3} customBadgeVariant="bottom-right">
-    <AccountCircle fontSize="large" />
-  </Badge>
+  <StoryWrapper>
+    <Badge invisible={false} badgeContent={3} customBadgeVariant="bottom-right">
+      <AccountCircle fontSize="large" />
+    </Badge>
+  </StoryWrapper>
 );
 
 bottomRight.story = {

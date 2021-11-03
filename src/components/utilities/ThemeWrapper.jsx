@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import { COLORS } from '@styles/colors';
+import { COLORS } from '../../styles/colors';
 
 class ThemeWrapper extends React.Component {
   constructor(props) {
     super(props);
 
-    const primaryThemeColor = COLORS.primary
-    const secondaryThemeColor = COLORS.secondary
+    const primaryThemeColor = COLORS.primary;
+    const secondaryThemeColor = COLORS.secondary;
     const textPrimaryThemeColor = COLORS.textPrimary;
     const textSecondaryThemeColor = COLORS.textSecondary;
     const backgroundThemeColor = COLORS.background;

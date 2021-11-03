@@ -1,5 +1,5 @@
 import { create } from '@storybook/theming';
-import { COLORS } from '@styles/colors';
+import { COLORS } from '../src/styles/colors';
 
 // Source: https://storybook.js.org/docs/configurations/theming/
 

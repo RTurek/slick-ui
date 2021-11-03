@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MaterialBadge from '@material-ui/core/Badge';
-import { withTheme, withStyles } from '@material-ui/core/styles';
-import { COLORS } from '@styles/colors';
+import { useTheme, withStyles } from '@material-ui/core/styles';
+import { COLORS } from '../../styles/colors';
 import hexToRgba from '../../utils/hexToRgba';
 import { decagramWithBorderEncoded, santaHatEncoded } from '../../assets/encodedSVGs';
 
@@ -82,42 +82,39 @@ function buildStyle(props) {
   };
 }
 
-class Badge extends React.PureComponent {
-  constructor(props) {
-    super(props);
-    this.styles = () => ({
-      badge: buildStyle(props)
-    });
-    this.createVariantBadge();
-  }
-
-  createVariantBadge = () => {
-    this.VariantBadge = withStyles(this.styles)((props) => {
-      const {
-        classes,
-        children,
-        style,
-        customBadgeVariant,
-        ...otherProps
-      } = props;
-
-      return (
-        <MaterialBadge
-          variant={customBadgeVariant.includes('dot') ? 'dot' : 'standard'}
-          classes={{
-            badge: classes.badge
-          }}
-          {...otherProps}
-        >
-          {children}
-        </MaterialBadge>
-      );
-    });
+function Badge(props) {
+  const styles = {
+    badge: buildStyle({
+      ...props,
+      theme: useTheme()
+    })
   };
 
-  render() {
-    return <this.VariantBadge {...this.props} />;
-  }
+  const VariantBadge = withStyles(styles)((variantProps) => {
+    const {
+      classes,
+      children,
+      style,
+      customBadgeVariant,
+      ...otherProps
+    } = variantProps;
+
+    return (
+      <MaterialBadge
+        variant={customBadgeVariant.includes('dot') ? 'dot' : 'standard'}
+        classes={{
+          badge: classes.badge
+        }}
+        {...otherProps}
+      >
+        {children}
+      </MaterialBadge>
+    );
+  });
+
+  return (
+    <VariantBadge {...props} />
+  );
 }
 
 Badge.propTypes = {
@@ -184,6 +181,6 @@ Badge.defaultProps = {
   }
 };
 
-export default withTheme(Badge);
+export default Badge;
 /* For Storybook Use Only */
 export const BadgeForStorybook = Badge;

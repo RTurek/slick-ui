@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 import MuiChip from '@material-ui/core/Chip';
 
-// https://material-ui.com/components/chips/
+// https://mui.com/components/chips/
 
 function Chip(props) {
-  const { theme, color, ...passedProps } = props;
+  const { color, ...passedProps } = props;
+  const theme = useTheme();
   const style = {
     ...props.style
   };
@@ -42,10 +43,7 @@ Chip.propTypes = {
   /** Varaint, default or outlined */
   variant: PropTypes.oneOf(['default', 'outlined']),
   /** optional override for style */
-  style: PropTypes.shape({}),
-  theme: PropTypes.shape({
-    palette: PropTypes.shape({})
-  })
+  style: PropTypes.shape({})
 };
 
 Chip.defaultProps = {
@@ -55,8 +53,7 @@ Chip.defaultProps = {
   color: 'primary',
   onDelete: undefined,
   variant: 'default',
-  style: undefined,
-  theme: {}
+  style: undefined
 };
 
-export default withTheme(Chip);
+export default Chip;

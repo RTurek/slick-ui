@@ -4,6 +4,7 @@ import { text, select, boolean } from '@storybook/addon-knobs';
 import StoryWrapper from '../utilities/StoryWrapper';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
 import Chip from './Chip';
+import chipNotes from './chipNotes.md';
 
 const colorOptions = {
   primary: 'primary',
@@ -16,7 +17,7 @@ export default {
   title: 'Inputs / Chip',
   decorators: [
     withInfo({
-      text: '',
+      text: chipNotes,
       header: true,
       inline: true,
       source: false,

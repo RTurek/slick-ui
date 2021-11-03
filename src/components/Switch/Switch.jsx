@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import MuiSwitch from '@material-ui/core/Switch';
 
-// https://material-ui.com/components/switches
+// https://mui.com/components/switches
 
 function Switch(props) {
   const { onChange, checked, disabled, ...otherProps } = props;
@@ -50,10 +50,11 @@ function Switch(props) {
 Switch.propTypes = {
   /** id (use for accessibility or nav) */
   id: PropTypes.string.isRequired,
+  /** classes */
   classes: PropTypes.shape({}),
   /** On Change Event handler (typically makes an API call and changes the checked value) */
   onChange: PropTypes.func.isRequired,
-  /** Checked sets switch to true or false / left or right */
+  /** Checked sets switch to true or false (right or left) */
   checked: PropTypes.bool.isRequired,
   /** Renders a disabled switch element */
   disabled: PropTypes.bool
