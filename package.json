@@ -28,12 +28,12 @@
   ],
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "build:dev": "npm install && npm build && npm lint && npm test -u",
     "lint": "eslint --ext .jsx --ext .js ./src",
     "lint:css": "stylelint './src/components/**/*.jsx'",
     "test": "TZ=UTC jest --runInBand",
     "storybook": "start-storybook",
-    "build-storybook": "build-storybook -c .storybook -o static-storybook"
+    "build-storybook": "build-storybook -c .storybook -o static-storybook",
+    "test-update-lint-css": "npm run test -u && npm run lint && npm run lint:css"
   },
   "peerDependencies": {
     "@babel/polyfill": "^7.10.4",

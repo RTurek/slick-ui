@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography should render 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 MuiTypography-colorPrimary"
+  theme={
+    Object {
+      "palette": Object {
+        "primary": Object {
+          "contrastText": "white",
+        },
+        "secondary": Object {
+          "contrastText": "white",
+        },
+      },
+    }
+  }
+>
+  This Is A Test
+</p>
+`;
