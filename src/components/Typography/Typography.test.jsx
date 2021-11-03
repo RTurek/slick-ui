@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Typography from './Typography';
-import ThemeWrapper from '../utilities/ThemeWrapper';
+import ThemeWrapper from '../../styles/ThemeWrapper';
 
 test('Typography should render', () => {
   const component = (

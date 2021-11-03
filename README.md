@@ -1,9 +1,9 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/73200f96-fc74-4825-98cd-a97f105e3155/deploy-status)](https://app.netlify.com/sites/slick-ui/deploys)
 
 # slick-ui (alpha)
-`slick-ui` is a component library developed by Ryan Turek, based on the Material-UI component library and the Material Design System. At the moment this is just a side project for fun, practice, and teaching.
+`slick-ui` is a component library based on Material-UI and the Material Design System. At the moment this is just a side project for fun, practice, and teaching.
 
-This library is a collection of work I've done over the last few years that demonstrates my ui development capabilities. It's meant for use on other side projects, not necessarily for general public use.
+This library is a collection of work I've done over the last few years that demonstrates my ui development capabilities. It's meant for use on my other side projects, not necessarily for use by the general public.
 
 Frontend architecture, ui component development, accessibility, clean and maintainable code, user experience, documentation, and ui testing are my passions as a developer. I like to live where all of those things come together!
 

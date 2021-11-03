@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import { COLORS } from '../../styles/colors';
+import { COLORS } from './colors';
 
 class ThemeWrapper extends React.Component {
   constructor(props) {
@@ -17,8 +17,8 @@ class ThemeWrapper extends React.Component {
     const urgentThemeColor = COLORS.urgent;
     const successThemeColor = COLORS.success;
     const warningThemeColor = COLORS.warning;
-    const crGreenThemeColor = COLORS.crGreen;
-    const rpOrangeThemeColor = COLORS.rpOrange;
+    const darkGreenThemeColor = COLORS.darkGreen;
+    const darkOrangeThemeColor = COLORS.darkOrange;
     const darkGreyThemeColor = COLORS.darkGrey;
     const mediumGreyThemeColor = COLORS.mediumGrey;
     const lightGreyThemeColor = COLORS.lightGrey;
@@ -134,14 +134,14 @@ class ThemeWrapper extends React.Component {
         lightGrey: {
           main: lightGreyThemeColor
         },
-        crGreen: {
-          main: crGreenThemeColor
+        darkGreen: {
+          main: darkGreenThemeColor
         },
         darkGrey: {
           main: darkGreyThemeColor
         },
-        rpOrange: {
-          main: rpOrangeThemeColor
+        darkOrange: {
+          main: darkOrangeThemeColor
         },
         modernBlack: {
           main: modernBlackThemeColor

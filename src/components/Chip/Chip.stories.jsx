@@ -1,7 +1,7 @@
 import React from 'react';
 import { withInfo } from '@storybook/addon-info';
 import { text, select, boolean } from '@storybook/addon-knobs';
-import StoryWrapper from '../utilities/StoryWrapper';
+import StoryWrapper from '../../styles/StoryWrapper';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
 import Chip from './Chip';
 import chipNotes from './chipNotes.md';

@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Badge from './Badge';
-import ThemeWrapper from '../utilities/ThemeWrapper';
+import ThemeWrapper from '../../styles/ThemeWrapper';
 
 test('Badge should render', () => {
   const component = (

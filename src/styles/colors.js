@@ -15,8 +15,8 @@ export const COLORS = {
   lightGrey: '#C1CDD9',
   mediumGrey: '#7E8E9F',
   darkGrey: '#5f6b78',
-  crGreen: '#83C91F',
-  rpOrange: '#f06000',
+  darkGreen: '#83C91F',
+  darkOrange: '#f06000',
 
   binary: '#FFFFFF',
   white: '#F4F4F4',

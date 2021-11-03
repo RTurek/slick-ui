@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withInfo } from '@storybook/addon-info';
-import StoryWrapper from '../utilities/StoryWrapper';
+import StoryWrapper from '../../styles/StoryWrapper';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
 import Switch from './Switch';
 import switchNotes from './switchNotes.md';

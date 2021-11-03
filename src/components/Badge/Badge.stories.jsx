@@ -2,7 +2,7 @@ import React from 'react';
 import { withInfo } from '@storybook/addon-info';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
-import StoryWrapper from '../utilities/StoryWrapper';
+import StoryWrapper from '../../styles/StoryWrapper';
 import Badge, { BadgeForStorybook } from './Badge';
 import badgeNotes from './badgeNotes.md';
 

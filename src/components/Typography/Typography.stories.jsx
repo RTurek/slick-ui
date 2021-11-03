@@ -2,7 +2,7 @@ import React from 'react';
 import { withInfo } from '@storybook/addon-info';
 import { boolean, select, object, text } from '@storybook/addon-knobs';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
-import StoryWrapper from '../utilities/StoryWrapper';
+import StoryWrapper from '../../styles/StoryWrapper';
 import Typography from './Typography';
 import typographyNotes from './typographyNotes.md';
 
