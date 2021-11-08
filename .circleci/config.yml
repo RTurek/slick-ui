@@ -13,9 +13,9 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
-          name: install and run tests
+          name: run codecov
           command: |
-            npm install && npm run test-with-codecov
+            npm run codecov
       - codecov/upload:
           file: ./coverage/lcov-report
           token: CODECOV_TOKEN
@@ -32,3 +32,6 @@ workflows:
           version: '16.10'
           # If you are using yarn, change the line below from "npm" to "yarn"
           pkg-manager: npm
+  test-and-upload-codecov:
+    jobs:
+      - node-run-test-with-codecov
