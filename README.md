@@ -1,4 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/73200f96-fc74-4825-98cd-a97f105e3155/deploy-status)](https://app.netlify.com/sites/slick-ui/deploys)
+[![CircleCI](https://img.shields.io/circleci/project/github/RTurek/slick-ui/main.svg)](https://app.circleci.com/pipelines/github/RTurek/slick-ui?branch=main)
+[![Coverage Status](https://img.shields.io/codecov/c/github/RTurek/slick-ui/main.svg)](https://codecov.io/gh/RTurek/slick-ui/branch/main)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/RTurek.svg?label=follow+rjturek)](https://twitter.com/rjturek)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RTurek/slick-ui/blob/main/LICENSE)
 
 # slick-ui (alpha)
 `slick-ui` is a component library based on Material-UI and the Material Design System. At the moment this is just a side project for fun, practice, and teaching.
@@ -10,12 +14,14 @@ Frontend architecture, ui component development, accessibility, clean and mainta
 _Things I'm playing around with for this project just to practice and learn..._
 - React.js
 - Material-UI
-- Storybook
 - Semantic HTML
 - styled-components (css-in-js)
-- Netlify
-- Jest
+- Jest and storybook testing
 - eslint / stylelint
+- Storybook
+- Netlify
+- CircleCI
+- Codecov
 - (not yet) tailwindcss (utility based css)
 - (not yet) TypeScript
 - (not yet) Custom HTML Elements (web components)
