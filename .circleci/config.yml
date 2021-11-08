@@ -5,29 +5,24 @@ version: 2.1
 # See: https://circleci.com/docs/2.0/orb-intro/
 orbs:
   node: circleci/node@4.7
-  codecov: codecov/codecov@1.0.2
+  codecov: codecov/codecov@3.0.0
 
 jobs:
-  run-with-node:
+  node-run-test-with-codecov:
     docker:
-      - image: circleci/node:10-browsers
+      # replace with your preferred image
+      - image: cimg/base:stable
     steps:
-      - checkout
-      - run:
-          name: install and run tests
-          command: |
-            npm install && npm test
       - codecov/upload:
-          file: './coverage/'
           token: ef6eb3c7-1440-464b-8ca9-a690ea115ed2
-# TODO: set env variable CODECOV_TOKEN='ef6eb3c7-1440-464b-8ca9-a690ea115ed2'
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
+  main-workflow: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
+      - node-run-test-with-codecov
       - node/test:
           # This is the node version to use for the `cimg/node` tag
           # Relevant tags can be found on the CircleCI Developer Hub
