@@ -5,6 +5,22 @@ version: 2.1
 # See: https://circleci.com/docs/2.0/orb-intro/
 orbs:
   node: circleci/node@4.7
+  codecov: codecov/codecov@1.0.2
+
+jobs:
+  run-with-node:
+    docker:
+      - image: circleci/node:10-browsers
+    steps:
+      - checkout
+      - run:
+          name: install and run tests
+          command: |
+            npm install && npm test
+      - codecov/upload:
+          file: './coverage/'
+          token: ef6eb3c7-1440-464b-8ca9-a690ea115ed2
+# TODO: set env variable CODECOV_TOKEN='ef6eb3c7-1440-464b-8ca9-a690ea115ed2'
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
