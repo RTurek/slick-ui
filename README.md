@@ -1,8 +1,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/73200f96-fc74-4825-98cd-a97f105e3155/deploy-status)](https://app.netlify.com/sites/slick-ui/deploys)
-[![CircleCI](https://img.shields.io/circleci/project/github/RTurek/slick-ui/main.svg)](https://app.circleci.com/pipelines/github/RTurek/slick-ui?branch=main)
+[![CircleCI](https://img.shields.io/circleci/project/github/RTurek/slick-ui/main.svg?style=flat&logo=circleci)](https://app.circleci.com/pipelines/github/RTurek/slick-ui?branch=main)
+
 <!-- [![Coverage Status](https://img.shields.io/codecov/c/github/RTurek/slick-ui/main.svg)](https://codecov.io/gh/RTurek/slick-ui/branch/main) -->
-[![Follow on Twitter](https://img.shields.io/twitter/follow/rjturek.svg?label=follow+rjturek)](https://twitter.com/rjturek)
+
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RTurek/slick-ui/blob/main/LICENSE)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/rjturek.svg?label=follow+rjturek)](https://twitter.com/rjturek)
 
 # slick-ui (alpha)
 `slick-ui` is a component library based on Material-UI and the Material Design System. At the moment this is just a side project for fun, practice, and teaching.
