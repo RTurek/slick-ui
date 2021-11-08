@@ -23,7 +23,8 @@ _Things I'm playing around with for this project just to practice and learn..._
 - Storybook
 - Netlify
 - CircleCI
-- Codecov
+- (not yet) Chromatic
+- (not yet) Codecov
 - (not yet) tailwindcss (utility based css)
 - (not yet) TypeScript
 - (not yet) Custom HTML Elements (web components)
