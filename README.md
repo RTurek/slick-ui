@@ -59,6 +59,10 @@ Run tests
   ```shell
     npm run test
   ```
+  Or
+  ```shell
+    npm run test-windows
+  ```
 
 Update Snapshots
   ```shell
