@@ -18,7 +18,7 @@ jobs:
             npm install && npm run test
       - codecov/upload:
           file: ./coverage/lcov-report
-          token: ef6eb3c7-1440-464b-8ca9-a690ea115ed2
+          token: CODECOV_TOKEN
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
