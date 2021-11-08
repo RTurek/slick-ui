@@ -30,8 +30,9 @@
     "build": "webpack --config webpack.config.js",
     "lint": "eslint --ext .jsx --ext .js ./src",
     "lint:css": "stylelint './src/components/**/*.jsx'",
-    "test": "TZ=UTC jest --runInBand && codecov",
-    "test-windows": "jest --runInBand && codecov",
+    "test": "TZ=UTC jest --runInBand",
+    "test-with-codecov": "TZ=UTC jest --runInBand && codecov",
+    "test-windows": "jest --runInBand",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook -c .storybook -o static-storybook",
     "test-update-lint-css": "npm run test -u && npm run lint && npm run lint:css"
