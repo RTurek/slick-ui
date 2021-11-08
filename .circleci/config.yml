@@ -14,7 +14,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - codecov/upload:
-          token: ef6eb3c7-1440-464b-8ca9-a690ea115ed2
+          token: $CODECOV_KEY
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
