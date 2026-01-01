@@ -2,9 +2,10 @@
 
 exports[`Button should render 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained Button__StyledButton-sc-1kiwsh8-0 iQlUci react-css"
-  disabled={false}
+  className="MuiButtonBase-root-kHvgeY huicfx MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root-jakOPJ gNagzz MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary Button__StyledButton-sc-1kiwsh8-0 cHwBCC react-css"
+  disabled={null}
   onBlur={[Function]}
+  onContextMenu={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -18,10 +19,6 @@ exports[`Button should render 1`] = `
   tabIndex={0}
   type="button"
 >
-  <span
-    className="MuiButton-label"
-  >
-    This Is A Test
-  </span>
+  This Is A Test
 </button>
 `;

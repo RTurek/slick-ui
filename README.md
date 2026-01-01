@@ -43,8 +43,18 @@ Clone `slick-ui` from GitHub - [https://github.com/rturek/slick-ui](https://gith
 ### Dependencies:
 
 _The project might work with previous versions, but I can only guarantee it works on these versions_
-- node v14.17.6
-- npm v8.1.2
+- node v20.x or higher
+- npm v10.x or higher
+
+### Major Versions:
+- React v18.3.1
+- MUI (Material-UI) v6.1.10
+- Storybook v8.6.14
+- Webpack v5.97.1
+- Jest v29.7.0
+- TypeScript v5.7.2
+- styled-components v6.1.19
+- ESLint v8.57.1
 
 ### Install
 

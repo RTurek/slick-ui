@@ -1,6 +1,6 @@
 import React from 'react';
 import { withInfo } from '@storybook/addon-info';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import AccountCircle from '@mui/icons-material/AccountCircle';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
 import StoryWrapper from '../../styles/StoryWrapper';
 import Badge from './Badge';

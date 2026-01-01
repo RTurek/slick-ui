@@ -1,6 +1,6 @@
 import React from 'react';
-import MaterialAvatar from '@material-ui/core/Avatar';
-import { withStyles } from '@material-ui/core/styles';
+import MaterialAvatar from '@mui/material/Avatar';
+import { withStyles } from '@mui/styles';
 import PropTypes from 'prop-types';
 import { COLORS } from '../../styles/colors';
 import Anonymous from '../../assets/svg/Anonymous';

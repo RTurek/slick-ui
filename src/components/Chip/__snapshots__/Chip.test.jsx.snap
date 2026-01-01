@@ -2,8 +2,9 @@
 
 exports[`Chip should render 1`] = `
 <div
-  className="MuiButtonBase-root MuiChip-root MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+  className="MuiButtonBase-root-kHvgeY huicfx MuiButtonBase-root MuiChip-root-iYEqDV gUcizm MuiChip-root MuiChip-default MuiChip-sizeMedium MuiChip-colorPrimary MuiChip-clickable MuiChip-clickableColorPrimary MuiChip-defaultPrimary"
   onBlur={[Function]}
+  onContextMenu={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
   onKeyDown={[Function]}
@@ -15,11 +16,11 @@ exports[`Chip should render 1`] = `
   onTouchMove={[Function]}
   onTouchStart={[Function]}
   role="button"
-  style={Object {}}
+  style={{}}
   tabIndex={0}
 >
   <span
-    className="MuiChip-label"
+    className="MuiChip-label-jdirIB gKxyeV MuiChip-label MuiChip-labelMedium"
   >
     test
   </span>

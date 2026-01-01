@@ -2,13 +2,13 @@
 
 exports[`Switch should render 1`] = `
 <span
-  className="MuiSwitch-root"
+  className="MuiSwitch-root-exLPbV gSFOTe MuiSwitch-root MuiSwitch-sizeMedium"
 >
   <span
-    aria-disabled={false}
-    className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-4 MuiSwitch-switchBase makeStyles-switchBase-1 MuiSwitch-colorSecondary PrivateSwitchBase-checked-5 Mui-checked makeStyles-checked-2"
+    className="MuiButtonBase-root-kHvgeY huicfx MuiButtonBase-root MuiSwitch-switchBase makeStyles-switchBase-1 MuiSwitch-colorPrimary Mui-checked makeStyles-checked-2 MuiSwitchBase-root-bgDfPc gYCHZR PrivateSwitchBase-root MuiSwitch-switchBase makeStyles-switchBase-1 MuiSwitch-colorPrimary Mui-checked makeStyles-checked-2 Mui-checked makeStyles-checked-2 MuiSwitch-switchBase-gbuYuI kkNVPt"
     data-test-id="jest-test-switch-1"
     onBlur={[Function]}
+    onContextMenu={[Function]}
     onDragLeave={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
@@ -19,25 +19,23 @@ exports[`Switch should render 1`] = `
     onTouchEnd={[Function]}
     onTouchMove={[Function]}
     onTouchStart={[Function]}
+    role="button"
     tabIndex={null}
   >
+    <input
+      checked={true}
+      className="MuiSwitchBase-root-cYmorr bUJXRi PrivateSwitchBase-input MuiSwitch-input"
+      id="test"
+      onChange={[Function]}
+      required={false}
+      type="checkbox"
+    />
     <span
-      className="MuiIconButton-label"
-    >
-      <input
-        checked={true}
-        className="PrivateSwitchBase-input-7 MuiSwitch-input"
-        id="test"
-        onChange={[Function]}
-        type="checkbox"
-      />
-      <span
-        className="MuiSwitch-thumb"
-      />
-    </span>
+      className="MuiSwitch-thumb-dZmXjV hHamyH MuiSwitch-thumb"
+    />
   </span>
   <span
-    className="MuiSwitch-track makeStyles-track-3"
+    className="MuiSwitch-track-jPjpPw fOlYLR MuiSwitch-track makeStyles-track-3"
   />
 </span>
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { withInfo } from '@storybook/addon-info';
 import { select, text } from '@storybook/addon-knobs';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+import AccountCircle from '@mui/icons-material/AccountCircle';
 import Avatar from './Avatar';
 import StoryWrapper from '../../styles/StoryWrapper';
 import { storybookStyles } from '../../../.storybook/storybookTheming';

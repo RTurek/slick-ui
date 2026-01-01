@@ -1,12 +1,12 @@
 import React from 'react';
-import MaterialTypography from '@material-ui/core/Typography';
-import { useTheme } from '@material-ui/core/styles';
+import MaterialTypography from '@mui/material/Typography';
+import { useTheme } from '@mui/material/styles';
 import { PropTypes } from 'prop-types';
 
 const Typography = (props) => {
   const theme = useTheme();
   const style = {
-    ...props.style
+    ...(props.style || {})
   };
   switch (props.color) {
     case 'success':
