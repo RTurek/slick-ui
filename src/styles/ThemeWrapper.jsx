@@ -1,7 +1,6 @@
 import React from 'react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import PropTypes from 'prop-types';
-import { createTheme } from '@mui/material/styles';
-import { ThemeProvider } from '@mui/material/styles';
 import { COLORS } from './colors';
 
 class ThemeWrapper extends React.Component {
