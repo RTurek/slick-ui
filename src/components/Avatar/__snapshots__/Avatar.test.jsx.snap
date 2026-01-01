@@ -2,12 +2,12 @@
 
 exports[`Avatar should render 1`] = `
 <div
-  className="MuiAvatar-root Component-root-1 MuiAvatar-circular react-css"
+  className="MuiAvatar-root-PXvGG dsHDpO MuiAvatar-root Component-root-1 MuiAvatar-circular react-css"
   onError={[Function]}
 >
   <img
     alt="-"
-    className="MuiAvatar-img"
+    className="MuiAvatar-img-lohygD knZgPd MuiAvatar-img"
     height="60px"
     src="http://i.pravatar.cc/300"
     width="60px"
@@ -20,7 +20,7 @@ exports[`Avatar should render Anonymous when there is no image or full name 1`] 
   className="svg-icon "
   height="60px"
   onClick={[Function]}
-  style={Object {}}
+  style={{}}
   viewBox="0 0 64 64"
   width="60px"
   xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ exports[`Avatar should render Anonymous when there is no image or full name 1`] 
 
 exports[`Avatar should render Initials when there is no image 1`] = `
 <div
-  className="MuiAvatar-root Component-root-2 MuiAvatar-circular react-css MuiAvatar-colorDefault"
+  className="MuiAvatar-root-PXvGG huwwSx MuiAvatar-root Component-root-2 MuiAvatar-circular MuiAvatar-colorDefault react-css"
 >
   JM
 </div>

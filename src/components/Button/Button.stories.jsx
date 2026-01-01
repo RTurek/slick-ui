@@ -2,7 +2,7 @@ import React from 'react';
 import { boolean, select } from '@storybook/addon-knobs';
 import { withActions } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import StarIcon from '@material-ui/icons/Star';
+import StarIcon from '@mui/icons-material/Star';
 import { BUTTON_SIZES } from '../../styles/sizes';
 import { storybookStyles } from '../../../.storybook/storybookTheming';
 import Button from './Button';

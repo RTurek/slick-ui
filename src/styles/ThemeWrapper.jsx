@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import { COLORS } from './colors';
 
 class ThemeWrapper extends React.Component {
@@ -27,7 +27,6 @@ class ThemeWrapper extends React.Component {
     this.muiTheme = createTheme({
       typography: {
         // fontFamily: primaryFontFamily,
-        useNextVariants: true,
         h1: {
           letterSpacing: '-1.5px'
         },
@@ -68,19 +67,7 @@ class ThemeWrapper extends React.Component {
           letterSpacing: '0.15px',
           lineHeight: 1.28571
         },
-        body1Next: {
-          letterSpacing: '0.25px',
-          lineHeight: 1.25
-        },
-        body2Next: {
-          letterSpacing: '0.15px',
-          lineHeight: 1.28571
-        },
         button: {
-          fontWeight: 700,
-          letterSpacing: '1.25px'
-        },
-        buttonNext: {
           fontWeight: 700,
           letterSpacing: '1.25px'
         },
@@ -147,18 +134,20 @@ class ThemeWrapper extends React.Component {
           main: modernBlackThemeColor
         }
       },
-      overrides: {
+      components: {
         MuiTypography: {
-          root: {
-            display: 'block'
+          styleOverrides: {
+            root: {
+              display: 'block'
+            }
           }
-        }
-      },
-      props: {
+        },
         MuiButtonBase: {
-          TouchRippleProps: {
-            style: {
-              color: lightGreyThemeColor
+          defaultProps: {
+            TouchRippleProps: {
+              style: {
+                color: lightGreyThemeColor
+              }
             }
           }
         }

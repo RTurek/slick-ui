@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MaterialBadge from '@material-ui/core/Badge';
-import { useTheme, withStyles } from '@material-ui/core/styles';
+import MaterialBadge from '@mui/material/Badge';
+import { useTheme } from '@mui/material/styles';
+import { withStyles } from '@mui/styles';
 import { COLORS } from '../../styles/colors';
 import hexToRgba from '../../utils/hexToRgba';
 import { decagramWithBorderEncoded, santaHatEncoded } from '../../assets/encodedSVGs';

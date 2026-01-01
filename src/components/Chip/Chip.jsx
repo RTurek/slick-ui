@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@material-ui/core/styles';
-import MuiChip from '@material-ui/core/Chip';
+import { useTheme } from '@mui/material/styles';
+import MuiChip from '@mui/material/Chip';
 
 // https://mui.com/components/chips/
 

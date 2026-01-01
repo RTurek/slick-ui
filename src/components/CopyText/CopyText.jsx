@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useReducer } from 'react';
 import PropTypes from 'prop-types';
-import InputBase from '@material-ui/core/InputBase';
+import InputBase from '@mui/material/InputBase';
 import styled from 'styled-components';
 import Button from '../Button/Button';
 

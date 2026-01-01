@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@mui/material/styles';
 import styled, { css } from 'styled-components';
 import classNames from 'classnames';
 import { rgba } from 'polished';
-import MaterialButton from '@material-ui/core/Button';
+import MaterialButton from '@mui/material/Button';
 import getColorFromTheme from '../../styles/getColorFromTheme';
 import { BUTTON_SIZES } from '../../styles/sizes';
 

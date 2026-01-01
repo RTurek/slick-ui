@@ -11,23 +11,24 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@components': path.resolve(__dirname, './src/components')
+      '@components': path.resolve(__dirname, './src/components'),
+      '@mui/styled-engine': '@mui/styled-engine-sc'
     }
   },
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'index.js',
-    library: '@turekworks/slick-ui',
-    libraryTarget: 'umd',
+    library: {
+      name: '@turekworks/slick-ui',
+      type: 'umd'
+    },
     globalObject: 'this'
   },
   externals: [
-    /@material-ui\/.*/,
+    /@mui\/.*/,
     {
       react: 'commonjs react',
       'react-dom': 'commonjs react-dom',
-      '@babel/polyfill': '@babel/polyfill',
-      'css-loader': 'css-loader',
       'prop-types': 'prop-types',
       'styled-components': 'styled-components'
     }
@@ -41,15 +42,10 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|otf|ttf|woff2?)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name][md5:hash].[ext]', // Name of bundled asset
-              outputPath: 'images/'
-            }
-          }
-        ]
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][hash][ext]'
+        }
       },
       {
         test: /\.(svg)$/,
@@ -65,7 +61,7 @@ module.exports = {
       {
         test: /\.css$/,
         include: [
-          path.resolve('./node_modules/@material'),
+          path.resolve('./node_modules/@mui'),
           path.resolve('./components')
         ],
         use: [
